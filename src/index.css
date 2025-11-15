@@ -1,13 +1,22 @@
 @import "tailwindcss";
- .scroll {
-            -ms-overflow-style: none; /* IE and Edge */
-            scrollbar-width: none; /* Firefox */
-          }
-          .scroll::-webkit-scrollbar {
-            display: none; /* Chrome, Safari, Opera */
-          }
-        
 
+/**
+ * Custom scrollbar utility - hides scrollbar while maintaining scroll functionality
+ * Cross-browser compatible
+ */
+.scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/**
+ * Montserrat font face declarations
+ * Regular (400) and Bold (700) weights
+ */
 @font-face {
   font-family: 'Montserrat';
   src: url('./assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
@@ -22,6 +31,10 @@
   font-style: normal;
 }
 
+/**
+ * Custom Tailwind theme configuration
+ * Defines Montserrat as a custom font family
+ */
 @theme {
   --font-montserrat: "Montserrat", system-ui, sans-serif;
 }
