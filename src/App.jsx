@@ -1,4 +1,6 @@
 import { Button } from "./components/Button";
+import { CheckBox } from "./components/CheckBox";
+import { ListItem } from "./components/ListItem";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
         }}
       >
        <Button />
+       <ListItem />
+
       </div>
     </div>
   );
