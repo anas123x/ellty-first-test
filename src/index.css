@@ -1,4 +1,12 @@
 @import "tailwindcss";
+ .scroll {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+          }
+          .scroll::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+          }
+        
 
 @font-face {
   font-family: 'Montserrat';

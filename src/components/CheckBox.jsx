@@ -10,7 +10,8 @@ export const CheckBox = ({ isHovering, isClicking, isChecked }) => {
   
   return (
     <button
-      className={`w-[25px] h-[25px] border border-[#CDCDCD] rounded-md flex justify-center items-center transition-all
+      className={`w-[25px] h-[25px] rounded-md flex justify-center items-center transition-all
+        ${(isHovering || isClicking) && !isChecked ? "border border-[#BDBDBD]" : "border border-[#CDCDCD]"}
         ${isChecked && isClicking
           ? "bg-[#2469F6] shadow-[0_0_0_3px_rgba(36,105,246,0.15)]" 
           : isChecked && isHovering
